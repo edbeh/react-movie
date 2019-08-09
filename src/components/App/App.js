@@ -8,7 +8,7 @@ import NotFound from '../elements/NotFound/NotFound';
 
 const App = () => {
     return (
-        <BrowserRouter  basename='/react_rmdb/'>
+        <BrowserRouter  basename='/react-movie/'>
             <React.Fragment>
                 <Switch>
                     <Route path="/" component={Home} exact />
