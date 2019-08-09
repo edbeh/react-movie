@@ -11,7 +11,7 @@ const App = () => {
         <BrowserRouter>
             <React.Fragment>
                 <Switch>
-                    <Route path="/" component={Home} exact />
+                    <Route path="/react-movie" component={Home} exact />
                     <Route path="/liked" component={Liked} exact />
                     <Route path="/:movieId" component={Movie} exact />
                     <Route component={NotFound} />
