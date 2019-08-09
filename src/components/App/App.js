@@ -8,10 +8,10 @@ import NotFound from '../elements/NotFound/NotFound';
 
 const App = () => {
     return (
-        <BrowserRouter>
+        <BrowserRouter  basename='/react-movie/'>
             <React.Fragment>
                 <Switch>
-                    <Route path="/react-movie/" component={Home} exact />
+                    <Route path="/" component={Home} exact />
                     <Route path="/liked" component={Liked} exact />
                     <Route path="/:movieId" component={Movie} exact />
                     <Route component={NotFound} />
