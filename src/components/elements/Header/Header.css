@@ -1,0 +1,85 @@
+.rmdb-header {
+  width: 100%;
+  height: auto;
+  background: #1c1c1c;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.rmdb-header-content {
+  max-width: 1280px;
+  min-height: 60px;
+  height: auto;
+  padding: 0px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.rmdb-header-content-left {
+  max-width: 350px;
+  float: left;
+  display: flex;
+}
+
+.left-menu {
+  font-size: 22px;
+  margin-top: 10px;
+  padding: 5px 20px 20px 0px;
+  font-family: Abel;
+  color: white;
+  text-decoration: none;
+}
+
+
+.rmdb-tmdb-logo {
+  width: 110px;
+  margin-top: 10px;
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .rmdb-header-content {
+    max-width: 1280px;
+    min-height: 0px;
+  }
+
+  .rmdb-tmdb-logo {
+    display: inline-block;
+    width:80px;
+    margin-top: 15px;
+  }
+}
+
+
+
+
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+  margin-bottom: 10px;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover {
+  display: block;
+}
