@@ -1,6 +1,6 @@
 import React from 'react'
 import {
-  CORS_URL,
+  // CORS_URL,
   API_URL,
   API_KEY,
   IMAGE_BASE_URL,
@@ -132,7 +132,7 @@ class Home extends React.Component {
         this.state.genreId
       }&page=${this.state.currentPage + 1}`
     } else {
-      endpoint = `${CORS_URL}${API_URL}search/movie/?api_key=${API_KEY}&language=en-US&query=${
+      endpoint = `${API_URL}search/movie/?api_key=${API_KEY}&language=en-US&query=${
         this.state.searchTerm
       }&page=${this.state.currentPage + 1}`
     }
