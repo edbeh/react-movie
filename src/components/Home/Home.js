@@ -80,7 +80,7 @@ class Home extends React.Component {
           ? `${API_URL}movie/popular?api_key=${API_KEY}&language=en-US&page=1`
           : `${API_URL}discover/movie?api_key=${API_KEY}&language=en-US&with_genres=${this.state.genreId}&page=1`
     } else {
-      endpoint = `${API_URL}search/movie/?api_key=${API_KEY}&language=en-US&query=${searchTerm}&page=1`
+      endpoint = `${API_URL}search/movie?api_key=${API_KEY}&language=en-US&query=${searchTerm}&page=1`
       console.log(endpoint)
     }
 
@@ -132,7 +132,7 @@ class Home extends React.Component {
         this.state.genreId
       }&page=${this.state.currentPage + 1}`
     } else {
-      endpoint = `${API_URL}search/movie/?api_key=${API_KEY}&language=en-US&query=${
+      endpoint = `${API_URL}search/movie?api_key=${API_KEY}&language=en-US&query=${
         this.state.searchTerm
       }&page=${this.state.currentPage + 1}`
     }
